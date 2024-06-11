@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <header>
+        <h1><center>Registro de Usuario</center></h1> 
+    </header>
+    <section>
+        <form action="procesar_form.php" method="post">
+            <fieldset>
+    
+            
+            <div>
+                <label for="ci">CI: </label>
+                <input type="text" name="ci" id="ci">
+            </div>
+            <div>
+                <label for="name">Nombre: </label>
+                <input type="text" name="nombre" id="name">
+            </div>
+            <div>
+                <label for="lastname">Apellido: </label>
+                <input type="text" name="apellido" id="lastname">
+            </div>
+            <div>
+                <label for="mail">Email: </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="telefono">Telefono: </label>
+                <input type="telefono" name="telefono" id="telefono">
+            </div>
+           
+            <div>
+                <strong>Estado Civil</strong>
+                <input type="radio" name="estado" id="soltero" value="soltero"> 
+                <label for="soltero">Soltero </label>
+               
+
+                <input type="radio" name="estado" id="casado" value="casado">
+                <label for="casado">Casado </label>
+                
+            </div>
+            <div>
+            <h3>Intereses:</h3>
+            <textarea cols="30" rows="15"></textarea>
+            <div>
+                <input type="submit" name="enviar" id="enviar">
+                
+               </div> 
+            
+        </form>
+      </section>
+    </fieldset>
+</body>
+</html>
